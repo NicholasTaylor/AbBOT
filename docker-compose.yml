@@ -1,0 +1,8 @@
+version: '3.6'
+
+services:
+    chromedriver:
+        build: .
+        volumes: 
+            - '.:/opt/AbBOT'
+        command: python req.py

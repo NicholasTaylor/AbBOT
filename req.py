@@ -1,9 +1,8 @@
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 import requests
 import random
 import time
-
-chromedriver_location = "./chromedriver"
 
 url = 'https://prolifewhistleblower.com/anonymous-form/'
 
@@ -45,7 +44,7 @@ cities = {'Arlington':	'Tarrant County',
 'Plano':	'Collin County',
 'San Antonio': 'Bexar County'}
 i =1
-driver = webdriver.Chrome(chromedriver_location)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 
 while(i < 10000):
     try:
