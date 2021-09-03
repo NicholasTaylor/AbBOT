@@ -1,4 +1,3 @@
-#FROM python:3.9.7-slim-bullseye
 FROM ubuntu:20.04
 
 RUN mkdir -p /opt/AbBOT
