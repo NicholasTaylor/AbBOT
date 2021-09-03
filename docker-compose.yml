@@ -5,4 +5,6 @@ services:
         build: .
         volumes: 
             - '.:/opt/AbBOT'
-        command: python req.py
+        command: python3 req.py
+        environment: 
+            DISPLAY: $DISPLAY
